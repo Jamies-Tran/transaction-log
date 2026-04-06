@@ -1,3 +1,7 @@
 spring:
   application:
     name: transaction-log
+  mongodb:
+    username: a
+    password: a
+    authentication-database: a
