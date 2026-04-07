@@ -1,7 +1,11 @@
 spring:
   application:
     name: transaction-log
-  mongodb:
-    username: a
-    password: a
-    authentication-database: a
+  data:
+    mongodb:
+      username: a
+      password: a
+      authentication-database: a
+      host: a
+      port: 2
+

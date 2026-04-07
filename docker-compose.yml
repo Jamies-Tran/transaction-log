@@ -12,6 +12,7 @@ services:
       MONGO_INITDB_ROOT_USERNAME: TRANSACTION_LOG
       MONGO_INITDB_ROOT_PASSWORD: 123
       MONGO_INITDB_DATABASE: transaction-log
+
     healthcheck:
       test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
       retries: 3
@@ -26,9 +27,11 @@ services:
     expose:
       - 8080
     environment:
-      SPRING_MONGODB_USERNAME: TRANSACTION_LOG
-      SPRING_MONGODB_PASSWORD: 123
-      SPRING_MONGODB_AUTHENTICATION-DATABASE: transaction-log
+      SPRING_DATA_MONGODB_USERNAME: TRANSACTION_LOG
+      SPRING_DATA_MONGODB_PASSWORD: 123
+      SPRING_DATA_MONGODB_AUTHENTICATION-DATABASE: transaction-log
+      SPRING_DATA_MONGODB_HOST: transaction-log-db
+      SPRING_DATA_MONGODB_PORT: 27017
     depends_on:
       transaction-log-db:
         condition: service_healthy
