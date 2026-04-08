@@ -22,9 +22,9 @@ public class TransactionLogDocument {
     LocalDateTime requestAt;
     LocalDateTime responseAt;
 
-    String action;
-
+    String description;
     Integer retryCount;
-
+    String errMessage;
+    Boolean allowRetry;
     String status;
 }

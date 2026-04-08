@@ -1,6 +1,6 @@
 package com.example.transactionlog.domain.repository.transaction.log;
 
-import com.example.transactionlog.domain.model.transaction.log.TransactionLog;
+import com.example.transactionlog.domain.entity.transaction.log.TransactionLog;
 
 import java.util.List;
 import java.util.Optional;

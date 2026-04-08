@@ -1,4 +1,4 @@
-package com.example.transactionlog.domain.model.transaction.log;
+package com.example.transactionlog.domain.entity.transaction.log;
 
 import lombok.Builder;
 
@@ -19,10 +19,10 @@ public record TransactionLog (
         LocalDateTime requestAt,
         LocalDateTime responseAt,
 
-        String action,
-
+        String description,
         Integer retryCount,
-
+        String errMessage,
+        Boolean allowRetry,
         String status
 ) {
 }

@@ -1,6 +1,6 @@
 package com.example.transactionlog.infrastructure.persistence.adapter.transaction.log;
 
-import com.example.transactionlog.domain.model.transaction.log.TransactionLog;
+import com.example.transactionlog.domain.entity.transaction.log.TransactionLog;
 import com.example.transactionlog.domain.repository.transaction.log.TransactionLogRepository;
 import com.example.transactionlog.infrastructure.persistence.entity.transaction.log.TransactionLogDocument;
 import com.example.transactionlog.infrastructure.persistence.mapper.transaction.log.TransactionLogMapper;

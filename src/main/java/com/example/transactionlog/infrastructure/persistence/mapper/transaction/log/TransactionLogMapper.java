@@ -1,6 +1,6 @@
 package com.example.transactionlog.infrastructure.persistence.mapper.transaction.log;
 
-import com.example.transactionlog.domain.model.transaction.log.TransactionLog;
+import com.example.transactionlog.domain.entity.transaction.log.TransactionLog;
 import com.example.transactionlog.infrastructure.persistence.entity.transaction.log.TransactionLogDocument;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
