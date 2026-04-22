@@ -1,4 +1,4 @@
-package com.example.transactionlog.adapter.controller;
+package com.example.transactionlog.adapter.controller.transaction.log;
 
 import com.example.transactionlog.adapter.api.transaction.log.TransactionLogApi;
 import com.example.transactionlog.application.dto.transaction.log.request.TransactionLogRequest;

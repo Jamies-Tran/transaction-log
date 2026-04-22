@@ -9,7 +9,7 @@ services:
     ports:
       - "27017:27017"
     environment:
-      MONGO_INITDB_ROOT_USERNAME: TRANSACTION_LOG
+      MONGO_INITDB_ROOT_USERNAME: transaction_log
       MONGO_INITDB_ROOT_PASSWORD: 123
       MONGO_INITDB_DATABASE: transaction-log
 
@@ -29,9 +29,10 @@ services:
     environment:
       SPRING_DATA_MONGODB_USERNAME: TRANSACTION_LOG
       SPRING_DATA_MONGODB_PASSWORD: 123
-      SPRING_DATA_MONGODB_AUTHENTICATION-DATABASE: transaction-log
+      SPRING_DATA_MONGODB_AUTHENTICATION-DATABASE: admin
       SPRING_DATA_MONGODB_HOST: transaction-log-db
       SPRING_DATA_MONGODB_PORT: 27017
+      SERVER_PORT: 8081
     depends_on:
       transaction-log-db:
         condition: service_healthy
@@ -54,4 +55,4 @@ volumes:
 
 networks:
   transaction-log-network:
-    driver: bridge
+    external: true

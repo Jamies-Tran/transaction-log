@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RequestMapping("/v1/transaction-log")
+@RequestMapping("/v1/log")
 public interface TransactionLogApi {
     @PostMapping
     ResponseEntity<String> save(@RequestBody TransactionLogRequest request);
